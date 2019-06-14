@@ -20,7 +20,7 @@
 		FA90054722B36D91001D450C /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90054622B36D91001D450C /* AuthManager.swift */; };
 		FA90054922B36D9F001D450C /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90054822B36D9F001D450C /* DatabaseManager.swift */; };
 		FA90054B22B36DAC001D450C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90054A22B36DAC001D450C /* Endpoint.swift */; };
-		FA90054D22B36DBA001D450C /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90054C22B36DBA001D450C /* StoreManager.swift */; };
+		FA90054D22B36DBA001D450C /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90054C22B36DBA001D450C /* StorageManager.swift */; };
 		FA90054F22B36DE1001D450C /* UserAuthentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA90054E22B36DE1001D450C /* UserAuthentication.storyboard */; };
 		FA90055122B36E01001D450C /* FinishUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90055022B36E01001D450C /* FinishUserProfileViewController.swift */; };
 		FA90055322B36E18001D450C /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90055222B36E18001D450C /* ForgotPasswordViewController.swift */; };
@@ -105,7 +105,7 @@
 		FA90054622B36D91001D450C /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		FA90054822B36D9F001D450C /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		FA90054A22B36DAC001D450C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		FA90054C22B36DBA001D450C /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		FA90054C22B36DBA001D450C /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		FA90054E22B36DE1001D450C /* UserAuthentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserAuthentication.storyboard; sourceTree = "<group>"; };
 		FA90055022B36E01001D450C /* FinishUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishUserProfileViewController.swift; sourceTree = "<group>"; };
 		FA90055222B36E18001D450C /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -289,7 +289,7 @@
 				FA90054622B36D91001D450C /* AuthManager.swift */,
 				FA90054822B36D9F001D450C /* DatabaseManager.swift */,
 				FA90054A22B36DAC001D450C /* Endpoint.swift */,
-				FA90054C22B36DBA001D450C /* StoreManager.swift */,
+				FA90054C22B36DBA001D450C /* StorageManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -605,7 +605,7 @@
 				FA90055322B36E18001D450C /* ForgotPasswordViewController.swift in Sources */,
 				FA90058722B370B4001D450C /* InspirationLayout.swift in Sources */,
 				FA90057922B37008001D450C /* MyListTableViewCell.swift in Sources */,
-				FA90054D22B36DBA001D450C /* StoreManager.swift in Sources */,
+				FA90054D22B36DBA001D450C /* StorageManager.swift in Sources */,
 				FA90056522B36F1C001D450C /* MyListTableViewController.swift in Sources */,
 				FA90054122B36D4C001D450C /* IBDesignables.swift in Sources */,
 				FA90056B22B36F60001D450C /* MyBucketNewItemViewController.swift in Sources */,
