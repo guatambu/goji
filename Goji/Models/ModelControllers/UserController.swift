@@ -6,4 +6,16 @@
 //  Copyright © 2019 DunDak, LLC. All rights reserved.
 //
 
-import Foundation
+
+import UIKit
+
+
+class UserController {
+    static let shared = UserController()
+    
+    var isUserLoggedIn: Bool = false
+}
+
+
+
+
