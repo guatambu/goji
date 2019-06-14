@@ -263,10 +263,10 @@
 		FA90053722B36AA0001D450C /* MyListTab */ = {
 			isa = PBXGroup;
 			children = (
-				FA90055B22B36E8C001D450C /* Storyboards */,
-				FA90055A22B36E7D001D450C /* ViewControllers */,
-				FA90055922B36E73001D450C /* ModelController */,
 				FA90055822B36E6D001D450C /* Views */,
+				FA90055922B36E73001D450C /* ModelController */,
+				FA90055A22B36E7D001D450C /* ViewControllers */,
+				FA90055B22B36E8C001D450C /* Storyboards */,
 			);
 			path = MyListTab;
 			sourceTree = "<group>";

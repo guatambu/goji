@@ -2,29 +2,48 @@
 //  UserProfileDetailViewController.swift
 //  Goji
 //
-//  Created by Michael Guatambu Davis on 6/13/19.
+//  Created by Michael Guatambu Davis on 10/18/18.
 //  Copyright © 2019 DunDak, LLC. All rights reserved.
 //
 
 import UIKit
 
 class UserProfileDetailViewController: UIViewController {
-
+    
+    // MARK: - Properties
+    
+    @IBOutlet weak var profilePicOutlet: UIImageView!
+    @IBOutlet weak var nameLabelOutlet: UILabel!
+    @IBOutlet weak var cityLabelOutlet: UILabel!
+    @IBOutlet weak var editProfileButtonOutlet: UIButton!
+    @IBOutlet weak var userBioLabelOutlet: UILabel!
+    @IBOutlet weak var borderViewOutlet: UIView!
+    @IBOutlet weak var logoutViewOutlet: UIView!
+    
+    var user: User?
+    
+    
+    // MARK: - ViewController Lifecycle Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        guard let user = user else { return }
+        
+        self.title = user.username
+        self.profilePicOutlet.image = user.mockProfilePic
+        self.nameLabelOutlet.text = "\(user.firstName) \(user.lastName)"
+        self.cityLabelOutlet.text = user.location
+        //self.userBioLabelOutlet.text = user.bio
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: - Actions
+    
+    @IBAction func editProfileButtonTapped(_ sender: UIButton) {
     }
-    */
-
+    
+    @IBAction func logoutButtonTapped(_ sender: UIButton) {
+    }
+    
 }
