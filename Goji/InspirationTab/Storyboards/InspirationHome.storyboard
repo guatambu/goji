@@ -1,7 +1,137 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Inspiration Collection View-->
+        <scene sceneID="npi-Sx-zV8">
+            <objects>
+                <viewController storyboardIdentifier="InspirationHome" id="WBx-XH-27o" userLabel="Inspiration Collection View" customClass="InspirationHomeViewController" customModule="BuckIt2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yA2-3A-BKy" userLabel="Inspiration View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PXF-ab-1Hi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewLayout key="collectionViewLayout" id="bm2-Az-9AQ" customClass="InspirationLayout" customModule="BuckIt2" customModuleProvider="target"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="inspirationCell" id="mqK-JF-7Mz" customClass="InspirationCollectionViewCell" customModule="BuckIt2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="225"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="225"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="yTO-rQ-XYA" userLabel="Inspiration View">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="225"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="AgT-XY-eyG">
+                                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Title" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wlL-gY-aGn">
+                                                            <rect key="frame" x="8" y="180" width="164" height="45"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="45" id="Kxh-4x-SCm"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="AgT-XY-eyG" firstAttribute="leading" secondItem="yTO-rQ-XYA" secondAttribute="leading" id="HEz-Kg-cMW"/>
+                                                        <constraint firstItem="wlL-gY-aGn" firstAttribute="top" secondItem="AgT-XY-eyG" secondAttribute="bottom" id="MIV-dL-H0r"/>
+                                                        <constraint firstAttribute="bottom" secondItem="wlL-gY-aGn" secondAttribute="bottom" id="Od6-ho-Viv"/>
+                                                        <constraint firstItem="AgT-XY-eyG" firstAttribute="centerX" secondItem="wlL-gY-aGn" secondAttribute="centerX" id="T39-Y2-g3h"/>
+                                                        <constraint firstItem="AgT-XY-eyG" firstAttribute="top" secondItem="yTO-rQ-XYA" secondAttribute="top" id="VAO-ct-Igg"/>
+                                                        <constraint firstAttribute="trailing" secondItem="wlL-gY-aGn" secondAttribute="trailing" constant="8" id="lSc-eS-Hy4"/>
+                                                        <constraint firstItem="wlL-gY-aGn" firstAttribute="leading" secondItem="yTO-rQ-XYA" secondAttribute="leadingMargin" id="xRM-cZ-hTx"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="yTO-rQ-XYA" secondAttribute="trailing" id="LrX-B6-Hmb"/>
+                                            <constraint firstItem="yTO-rQ-XYA" firstAttribute="top" secondItem="mqK-JF-7Mz" secondAttribute="top" id="QtO-n2-89C"/>
+                                            <constraint firstAttribute="bottom" secondItem="yTO-rQ-XYA" secondAttribute="bottom" id="Shy-8P-rcf"/>
+                                            <constraint firstItem="yTO-rQ-XYA" firstAttribute="leading" secondItem="mqK-JF-7Mz" secondAttribute="leading" id="cm0-OW-Ncm"/>
+                                        </constraints>
+                                        <size key="customSize" width="180" height="225"/>
+                                        <connections>
+                                            <outlet property="inspirationImageView" destination="AgT-XY-eyG" id="ubz-QJ-tn4"/>
+                                            <outlet property="inspirationView" destination="yTO-rQ-XYA" id="VF6-ln-3n7"/>
+                                            <outlet property="itemTitleLabel" destination="wlL-gY-aGn" id="Ysj-Mj-y5Z"/>
+                                            <segue destination="WVG-VH-NAV" kind="show" identifier="cellToInspirationDetailVC" id="Qx0-Oc-nwh"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PXF-ab-1Hi" firstAttribute="top" secondItem="2vA-Ie-bby" secondAttribute="top" id="afC-C8-4xV"/>
+                            <constraint firstItem="PXF-ab-1Hi" firstAttribute="leading" secondItem="yA2-3A-BKy" secondAttribute="leading" id="b3n-e0-GER"/>
+                            <constraint firstItem="PXF-ab-1Hi" firstAttribute="bottom" secondItem="2vA-Ie-bby" secondAttribute="bottom" id="mJl-fP-0fX"/>
+                            <constraint firstAttribute="trailing" secondItem="PXF-ab-1Hi" secondAttribute="trailing" id="nJ0-hR-2Wa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2vA-Ie-bby"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xd4-ns-gbn"/>
+                    <connections>
+                        <outlet property="inspirationCollectionView" destination="PXF-ab-1Hi" id="rR4-rm-gDW"/>
+                        <segue destination="Ibc-Sq-JYR" kind="show" id="B3e-aV-fUF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="op0-DJ-sfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144.8" y="1121.2893553223389"/>
+        </scene>
+        <!--Inspiration Item Detail-->
+        <scene sceneID="TnI-zP-OWs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InspirationItemDetail" id="WVG-VH-NAV" userLabel="Inspiration Item Detail" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHH-zo-lKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1834" y="1201"/>
+        </scene>
+        <!--Inspiration-->
+        <scene sceneID="GHm-wR-Ye6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xfR-gp-f87" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Inspiration" id="t6y-R3-WaM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="7Oj-4z-yyH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WBx-XH-27o" kind="relationship" relationship="rootViewController" id="pvG-Z2-V9M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TV0-zk-O2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.59999999999999" y="1121.2893553223389"/>
+        </scene>
+        <!--InspirationSearch-->
+        <scene sceneID="Hgo-mG-ueE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InspirationSearch" id="Ibc-Sq-JYR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ub6-uX-XsT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1854" y="1043"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="defaultPhoto" width="700" height="700"/>
+    </resources>
 </document>

@@ -203,8 +203,8 @@
 			children = (
 				FA90053422B36A7C001D450C /* Models */,
 				FA90053522B36A83001D450C /* ConnectTab */,
-				FA90053722B36AA0001D450C /* MyListTab */,
 				FA90053622B36A8E001D450C /* InspirationTab */,
+				FA90053722B36AA0001D450C /* MyListTab */,
 				FA90053822B36AAC001D450C /* UserAuthentication */,
 				FA90053922B36ABA001D450C /* Networking */,
 				FA90053A22B36AC3001D450C /* Extensions */,
@@ -252,10 +252,10 @@
 		FA90053622B36A8E001D450C /* InspirationTab */ = {
 			isa = PBXGroup;
 			children = (
-				FA90057D22B37045001D450C /* Storyboards */,
-				FA90057C22B3702E001D450C /* Layout */,
-				FA90057B22B37027001D450C /* Views */,
 				FA90057A22B37018001D450C /* ViewControllers */,
+				FA90057B22B37027001D450C /* Views */,
+				FA90057C22B3702E001D450C /* Layout */,
+				FA90057D22B37045001D450C /* Storyboards */,
 			);
 			path = InspirationTab;
 			sourceTree = "<group>";
@@ -376,8 +376,8 @@
 			isa = PBXGroup;
 			children = (
 				FA90058822B370DF001D450C /* InspirationCollectionViewCell.swift */,
-				FA90058C22B37133001D450C /* QuickAddButton.swift */,
 				FA90058A22B37102001D450C /* InspirationItemDetailPhotosCollectionViewCell.swift */,
+				FA90058C22B37133001D450C /* QuickAddButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -412,10 +412,10 @@
 		FA90059B22B371FD001D450C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FA90059F22B37259001D450C /* ChatViewController.swift */,
-				FA9005A122B3726F001D450C /* MessageSearchUserViewController.swift */,
-				FA9005A322B37280001D450C /* MessageListViewController.swift */,
 				FA9005A522B3728E001D450C /* MessageComposeViewController.swift */,
+				FA9005A322B37280001D450C /* MessageListViewController.swift */,
+				FA9005A122B3726F001D450C /* MessageSearchUserViewController.swift */,
+				FA90059F22B37259001D450C /* ChatViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

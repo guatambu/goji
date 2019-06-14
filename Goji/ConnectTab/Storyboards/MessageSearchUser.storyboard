@@ -1,7 +1,92 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Connect Compose->Search-->
+        <scene sceneID="1Cs-7a-Xfb">
+            <objects>
+                <viewController id="ncG-cd-b0g" userLabel="Connect Compose-&gt;Search" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qYq-An-fMZ" userLabel="Connect New Message Search View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rap-zT-FCd" userLabel="Connect Messages Search Table View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="connectNewMessageSearchResultsCell" textLabel="ukw-yS-9js" detailTextLabel="ntX-yq-CV0" style="IBUITableViewCellStyleSubtitle" id="mh8-1p-uRT">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mh8-1p-uRT" id="bZG-0J-g5v" userLabel="Connect New Messages Search Results Content View">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ukw-yS-9js" userLabel="Connect New Message Search Name Label">
+                                                    <rect key="frame" x="20" y="5" width="45" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ntX-yq-CV0">
+                                                    <rect key="frame" x="20" y="25.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ncG-cd-b0g" id="gau-un-WuY"/>
+                                    <outlet property="delegate" destination="ncG-cd-b0g" id="n4n-N5-JqL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rap-zT-FCd" firstAttribute="top" secondItem="uE6-Gl-OYV" secondAttribute="top" id="99K-8b-znW"/>
+                            <constraint firstItem="Rap-zT-FCd" firstAttribute="leading" secondItem="qYq-An-fMZ" secondAttribute="leading" id="R4p-WO-JAB"/>
+                            <constraint firstAttribute="trailing" secondItem="Rap-zT-FCd" secondAttribute="trailing" id="VIM-QA-WBY"/>
+                            <constraint firstItem="Rap-zT-FCd" firstAttribute="bottom" secondItem="uE6-Gl-OYV" secondAttribute="bottom" id="fNT-Vi-FYT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uE6-Gl-OYV"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Connect With" id="xOY-cE-zIe"/>
+                    <connections>
+                        <outlet property="tableView" destination="Rap-zT-FCd" id="2uj-9x-uDh"/>
+                        <segue destination="V5P-fd-e93" kind="show" identifier="ToChatVC" id="eQ0-94-b5c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pEg-3j-wcx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2444" y="1356.9715142428786"/>
+        </scene>
+        <!--MessageChat-->
+        <scene sceneID="i7L-nf-qwK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MessageChat" id="V5P-fd-e93" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FY3-nd-aXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3104" y="1215"/>
+        </scene>
+        <!--MessageCompose-->
+        <scene sceneID="hoS-dS-cuj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MessageCompose" id="VqB-mO-ufO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4VU-XD-h3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3282.4000000000001" y="1356.521739130435"/>
+        </scene>
+    </scenes>
 </document>
