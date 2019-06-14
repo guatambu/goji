@@ -1,0 +1,907 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA90051222B369C7001D450C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90051122B369C7001D450C /* AppDelegate.swift */; };
+		FA90051422B369C7001D450C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90051322B369C7001D450C /* ViewController.swift */; };
+		FA90051722B369C7001D450C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA90051522B369C7001D450C /* Main.storyboard */; };
+		FA90051A22B369C7001D450C /* Goji.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA90051822B369C7001D450C /* Goji.xcdatamodeld */; };
+		FA90051C22B369C9001D450C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA90051B22B369C9001D450C /* Assets.xcassets */; };
+		FA90051F22B369C9001D450C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA90051D22B369C9001D450C /* LaunchScreen.storyboard */; };
+		FA90052A22B369C9001D450C /* GojiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90052922B369C9001D450C /* GojiTests.swift */; };
+		FA90053D22B36BED001D450C /* Mock Data Images in Resources */ = {isa = PBXBuildFile; fileRef = FA90053C22B36BED001D450C /* Mock Data Images */; };
+		FA90053F22B36C11001D450C /* whatevs.png in Resources */ = {isa = PBXBuildFile; fileRef = FA90053E22B36C11001D450C /* whatevs.png */; };
+		FA90054122B36D4C001D450C /* IBDesignables.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90054022B36D4C001D450C /* IBDesignables.swift */; };
+		FA90054322B36D63001D450C /* ReuseIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90054222B36D63001D450C /* ReuseIdentifiable.swift */; };
+		FA90054522B36D7A001D450C /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90054422B36D7A001D450C /* UIViewController+Alert.swift */; };
+		FA90054722B36D91001D450C /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90054622B36D91001D450C /* AuthManager.swift */; };
+		FA90054922B36D9F001D450C /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90054822B36D9F001D450C /* DatabaseManager.swift */; };
+		FA90054B22B36DAC001D450C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90054A22B36DAC001D450C /* Endpoint.swift */; };
+		FA90054D22B36DBA001D450C /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90054C22B36DBA001D450C /* StoreManager.swift */; };
+		FA90054F22B36DE1001D450C /* UserAuthentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA90054E22B36DE1001D450C /* UserAuthentication.storyboard */; };
+		FA90055122B36E01001D450C /* FinishUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90055022B36E01001D450C /* FinishUserProfileViewController.swift */; };
+		FA90055322B36E18001D450C /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90055222B36E18001D450C /* ForgotPasswordViewController.swift */; };
+		FA90055522B36E2A001D450C /* UserCreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90055422B36E2A001D450C /* UserCreateAccountViewController.swift */; };
+		FA90055722B36E37001D450C /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90055622B36E37001D450C /* UserLoginViewController.swift */; };
+		FA90055D22B36EC3001D450C /* MyList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA90055C22B36EC3001D450C /* MyList.storyboard */; };
+		FA90055F22B36EDB001D450C /* MyListDetailItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA90055E22B36EDB001D450C /* MyListDetailItem.storyboard */; };
+		FA90056122B36EED001D450C /* MyListNewItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA90056022B36EED001D450C /* MyListNewItem.storyboard */; };
+		FA90056322B36EFD001D450C /* MyListSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA90056222B36EFD001D450C /* MyListSettings.storyboard */; };
+		FA90056522B36F1C001D450C /* MyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90056422B36F1C001D450C /* MyListTableViewController.swift */; };
+		FA90056722B36F30001D450C /* MyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90056622B36F30001D450C /* MyListViewController.swift */; };
+		FA90056922B36F43001D450C /* UserProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90056822B36F43001D450C /* UserProfileDetailViewController.swift */; };
+		FA90056B22B36F60001D450C /* MyBucketNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90056A22B36F60001D450C /* MyBucketNewItemViewController.swift */; };
+		FA90056D22B36F71001D450C /* MyBucketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90056C22B36F71001D450C /* MyBucketViewController.swift */; };
+		FA90056F22B36F9C001D450C /* MyListDetailItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90056E22B36F9C001D450C /* MyListDetailItemViewController.swift */; };
+		FA90057122B36FB3001D450C /* MyListNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90057022B36FB3001D450C /* MyListNewItemViewController.swift */; };
+		FA90057322B36FCA001D450C /* MyListPhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90057222B36FCA001D450C /* MyListPhotoPickerViewController.swift */; };
+		FA90057522B36FD8001D450C /* MyListSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90057422B36FD8001D450C /* MyListSettingsViewController.swift */; };
+		FA90057722B36FEE001D450C /* MyListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90057622B36FEE001D450C /* MyListController.swift */; };
+		FA90057922B37008001D450C /* MyListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90057822B37008001D450C /* MyListTableViewCell.swift */; };
+		FA90057F22B37062001D450C /* InspirationHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA90057E22B37062001D450C /* InspirationHome.storyboard */; };
+		FA90058122B37078001D450C /* InspirationItemDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA90058022B37078001D450C /* InspirationItemDetail.storyboard */; };
+		FA90058322B37088001D450C /* InspirationSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA90058222B37088001D450C /* InspirationSearch.storyboard */; };
+		FA90058522B3709C001D450C /* InspirationOtherUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA90058422B3709C001D450C /* InspirationOtherUser.storyboard */; };
+		FA90058722B370B4001D450C /* InspirationLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90058622B370B4001D450C /* InspirationLayout.swift */; };
+		FA90058922B370DF001D450C /* InspirationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90058822B370DF001D450C /* InspirationCollectionViewCell.swift */; };
+		FA90058B22B37102001D450C /* InspirationItemDetailPhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90058A22B37102001D450C /* InspirationItemDetailPhotosCollectionViewCell.swift */; };
+		FA90058D22B37133001D450C /* QuickAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90058C22B37133001D450C /* QuickAddButton.swift */; };
+		FA90058F22B37158001D450C /* InspirationHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90058E22B37158001D450C /* InspirationHomeViewController.swift */; };
+		FA90059122B37179001D450C /* InspirationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90059022B37179001D450C /* InspirationDetailViewController.swift */; };
+		FA90059322B3718E001D450C /* InspirationOtherUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90059222B3718E001D450C /* InspirationOtherUserViewController.swift */; };
+		FA90059522B371A4001D450C /* InspirationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90059422B371A4001D450C /* InspirationSearchViewController.swift */; };
+		FA90059722B371BA001D450C /* InspirationAddToListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90059622B371BA001D450C /* InspirationAddToListViewController.swift */; };
+		FA90059922B371D3001D450C /* InspirationPersonalizedAddedItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90059822B371D3001D450C /* InspirationPersonalizedAddedItemViewController.swift */; };
+		FA90059E22B3723E001D450C /* MessageListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90059D22B3723E001D450C /* MessageListTableViewCell.swift */; };
+		FA9005A022B37259001D450C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90059F22B37259001D450C /* ChatViewController.swift */; };
+		FA9005A222B3726F001D450C /* MessageSearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9005A122B3726F001D450C /* MessageSearchUserViewController.swift */; };
+		FA9005A422B37280001D450C /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9005A322B37280001D450C /* MessageListViewController.swift */; };
+		FA9005A622B3728E001D450C /* MessageComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9005A522B3728E001D450C /* MessageComposeViewController.swift */; };
+		FA9005A822B372A2001D450C /* MessageList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9005A722B372A2001D450C /* MessageList.storyboard */; };
+		FA9005AA22B372BC001D450C /* MessageSearchAndCompose.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9005A922B372BC001D450C /* MessageSearchAndCompose.storyboard */; };
+		FA9005AC22B372CC001D450C /* MessageCompose.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9005AB22B372CC001D450C /* MessageCompose.storyboard */; };
+		FA9005AE22B372DA001D450C /* MessageSearchUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9005AD22B372DA001D450C /* MessageSearchUser.storyboard */; };
+		FA9005B022B372EC001D450C /* MessageChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9005AF22B372EC001D450C /* MessageChat.storyboard */; };
+		FA9005B322B37346001D450C /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9005B222B37346001D450C /* UserController.swift */; };
+		FA9005B522B3735E001D450C /* BucketList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9005B422B3735E001D450C /* BucketList.swift */; };
+		FA9005B722B37370001D450C /* BucketListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9005B622B37370001D450C /* BucketListItem.swift */; };
+		FA9005B922B37388001D450C /* BucketListItemComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9005B822B37388001D450C /* BucketListItemComment.swift */; };
+		FA9005BB22B37394001D450C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9005BA22B37394001D450C /* Message.swift */; };
+		FA9005BD22B373A2001D450C /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9005BC22B373A2001D450C /* Conversation.swift */; };
+		FA9005BF22B373B5001D450C /* MockDataMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9005BE22B373B5001D450C /* MockDataMessages.swift */; };
+		FA9005C122B373CC001D450C /* MockDataBucketListItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9005C022B373CC001D450C /* MockDataBucketListItems.swift */; };
+		FA9005C322B373DC001D450C /* MockDataUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9005C222B373DC001D450C /* MockDataUsers.swift */; };
+		FA9005C522B373EB001D450C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9005C422B373EB001D450C /* User.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA90052622B369C9001D450C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA90050622B369C7001D450C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA90050D22B369C7001D450C;
+			remoteInfo = Goji;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA90050E22B369C7001D450C /* Goji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goji.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA90051122B369C7001D450C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA90051322B369C7001D450C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA90051622B369C7001D450C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA90051922B369C7001D450C /* Goji.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goji.xcdatamodel; sourceTree = "<group>"; };
+		FA90051B22B369C9001D450C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA90051E22B369C9001D450C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA90052022B369C9001D450C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA90052522B369C9001D450C /* GojiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GojiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA90052922B369C9001D450C /* GojiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GojiTests.swift; sourceTree = "<group>"; };
+		FA90052B22B369C9001D450C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA90053C22B36BED001D450C /* Mock Data Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Mock Data Images"; sourceTree = "<group>"; };
+		FA90053E22B36C11001D450C /* whatevs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whatevs.png; sourceTree = "<group>"; };
+		FA90054022B36D4C001D450C /* IBDesignables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignables.swift; sourceTree = "<group>"; };
+		FA90054222B36D63001D450C /* ReuseIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifiable.swift; sourceTree = "<group>"; };
+		FA90054422B36D7A001D450C /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		FA90054622B36D91001D450C /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		FA90054822B36D9F001D450C /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		FA90054A22B36DAC001D450C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		FA90054C22B36DBA001D450C /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		FA90054E22B36DE1001D450C /* UserAuthentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserAuthentication.storyboard; sourceTree = "<group>"; };
+		FA90055022B36E01001D450C /* FinishUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishUserProfileViewController.swift; sourceTree = "<group>"; };
+		FA90055222B36E18001D450C /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		FA90055422B36E2A001D450C /* UserCreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreateAccountViewController.swift; sourceTree = "<group>"; };
+		FA90055622B36E37001D450C /* UserLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
+		FA90055C22B36EC3001D450C /* MyList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyList.storyboard; sourceTree = "<group>"; };
+		FA90055E22B36EDB001D450C /* MyListDetailItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyListDetailItem.storyboard; sourceTree = "<group>"; };
+		FA90056022B36EED001D450C /* MyListNewItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyListNewItem.storyboard; sourceTree = "<group>"; };
+		FA90056222B36EFD001D450C /* MyListSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyListSettings.storyboard; sourceTree = "<group>"; };
+		FA90056422B36F1C001D450C /* MyListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListTableViewController.swift; sourceTree = "<group>"; };
+		FA90056622B36F30001D450C /* MyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewController.swift; sourceTree = "<group>"; };
+		FA90056822B36F43001D450C /* UserProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileDetailViewController.swift; sourceTree = "<group>"; };
+		FA90056A22B36F60001D450C /* MyBucketNewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBucketNewItemViewController.swift; sourceTree = "<group>"; };
+		FA90056C22B36F71001D450C /* MyBucketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBucketViewController.swift; sourceTree = "<group>"; };
+		FA90056E22B36F9C001D450C /* MyListDetailItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListDetailItemViewController.swift; sourceTree = "<group>"; };
+		FA90057022B36FB3001D450C /* MyListNewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListNewItemViewController.swift; sourceTree = "<group>"; };
+		FA90057222B36FCA001D450C /* MyListPhotoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListPhotoPickerViewController.swift; sourceTree = "<group>"; };
+		FA90057422B36FD8001D450C /* MyListSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListSettingsViewController.swift; sourceTree = "<group>"; };
+		FA90057622B36FEE001D450C /* MyListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListController.swift; sourceTree = "<group>"; };
+		FA90057822B37008001D450C /* MyListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListTableViewCell.swift; sourceTree = "<group>"; };
+		FA90057E22B37062001D450C /* InspirationHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InspirationHome.storyboard; sourceTree = "<group>"; };
+		FA90058022B37078001D450C /* InspirationItemDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InspirationItemDetail.storyboard; sourceTree = "<group>"; };
+		FA90058222B37088001D450C /* InspirationSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InspirationSearch.storyboard; sourceTree = "<group>"; };
+		FA90058422B3709C001D450C /* InspirationOtherUser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InspirationOtherUser.storyboard; sourceTree = "<group>"; };
+		FA90058622B370B4001D450C /* InspirationLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationLayout.swift; sourceTree = "<group>"; };
+		FA90058822B370DF001D450C /* InspirationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA90058A22B37102001D450C /* InspirationItemDetailPhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationItemDetailPhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA90058C22B37133001D450C /* QuickAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAddButton.swift; sourceTree = "<group>"; };
+		FA90058E22B37158001D450C /* InspirationHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationHomeViewController.swift; sourceTree = "<group>"; };
+		FA90059022B37179001D450C /* InspirationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationDetailViewController.swift; sourceTree = "<group>"; };
+		FA90059222B3718E001D450C /* InspirationOtherUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationOtherUserViewController.swift; sourceTree = "<group>"; };
+		FA90059422B371A4001D450C /* InspirationSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationSearchViewController.swift; sourceTree = "<group>"; };
+		FA90059622B371BA001D450C /* InspirationAddToListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationAddToListViewController.swift; sourceTree = "<group>"; };
+		FA90059822B371D3001D450C /* InspirationPersonalizedAddedItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationPersonalizedAddedItemViewController.swift; sourceTree = "<group>"; };
+		FA90059D22B3723E001D450C /* MessageListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListTableViewCell.swift; sourceTree = "<group>"; };
+		FA90059F22B37259001D450C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		FA9005A122B3726F001D450C /* MessageSearchUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSearchUserViewController.swift; sourceTree = "<group>"; };
+		FA9005A322B37280001D450C /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
+		FA9005A522B3728E001D450C /* MessageComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComposeViewController.swift; sourceTree = "<group>"; };
+		FA9005A722B372A2001D450C /* MessageList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MessageList.storyboard; sourceTree = "<group>"; };
+		FA9005A922B372BC001D450C /* MessageSearchAndCompose.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MessageSearchAndCompose.storyboard; sourceTree = "<group>"; };
+		FA9005AB22B372CC001D450C /* MessageCompose.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MessageCompose.storyboard; sourceTree = "<group>"; };
+		FA9005AD22B372DA001D450C /* MessageSearchUser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MessageSearchUser.storyboard; sourceTree = "<group>"; };
+		FA9005AF22B372EC001D450C /* MessageChat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MessageChat.storyboard; sourceTree = "<group>"; };
+		FA9005B222B37346001D450C /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		FA9005B422B3735E001D450C /* BucketList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketList.swift; sourceTree = "<group>"; };
+		FA9005B622B37370001D450C /* BucketListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListItem.swift; sourceTree = "<group>"; };
+		FA9005B822B37388001D450C /* BucketListItemComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListItemComment.swift; sourceTree = "<group>"; };
+		FA9005BA22B37394001D450C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		FA9005BC22B373A2001D450C /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		FA9005BE22B373B5001D450C /* MockDataMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataMessages.swift; sourceTree = "<group>"; };
+		FA9005C022B373CC001D450C /* MockDataBucketListItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataBucketListItems.swift; sourceTree = "<group>"; };
+		FA9005C222B373DC001D450C /* MockDataUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataUsers.swift; sourceTree = "<group>"; };
+		FA9005C422B373EB001D450C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA90050B22B369C7001D450C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA90052222B369C9001D450C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA90050522B369C7001D450C = {
+			isa = PBXGroup;
+			children = (
+				FA90051022B369C7001D450C /* Goji */,
+				FA90052822B369C9001D450C /* GojiTests */,
+				FA90050F22B369C7001D450C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA90050F22B369C7001D450C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA90050E22B369C7001D450C /* Goji.app */,
+				FA90052522B369C9001D450C /* GojiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA90051022B369C7001D450C /* Goji */ = {
+			isa = PBXGroup;
+			children = (
+				FA90053B22B36AD2001D450C /* AppResources */,
+				FA90053A22B36AC3001D450C /* Extensions */,
+				FA90053922B36ABA001D450C /* Networking */,
+				FA90053822B36AAC001D450C /* UserAuthentication */,
+				FA90053722B36AA0001D450C /* MyListTab */,
+				FA90053622B36A8E001D450C /* InspirationTab */,
+				FA90053522B36A83001D450C /* ConnectTab */,
+				FA90053422B36A7C001D450C /* Models */,
+				FA90051322B369C7001D450C /* ViewController.swift */,
+				FA90051522B369C7001D450C /* Main.storyboard */,
+				FA90051D22B369C9001D450C /* LaunchScreen.storyboard */,
+				FA90051822B369C7001D450C /* Goji.xcdatamodeld */,
+			);
+			path = Goji;
+			sourceTree = "<group>";
+		};
+		FA90052822B369C9001D450C /* GojiTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA90052922B369C9001D450C /* GojiTests.swift */,
+				FA90052B22B369C9001D450C /* Info.plist */,
+			);
+			path = GojiTests;
+			sourceTree = "<group>";
+		};
+		FA90053422B36A7C001D450C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA9005B122B37328001D450C /* ModelControllers */,
+				FA9005B422B3735E001D450C /* BucketList.swift */,
+				FA9005B622B37370001D450C /* BucketListItem.swift */,
+				FA9005B822B37388001D450C /* BucketListItemComment.swift */,
+				FA9005BA22B37394001D450C /* Message.swift */,
+				FA9005BC22B373A2001D450C /* Conversation.swift */,
+				FA9005C422B373EB001D450C /* User.swift */,
+				FA9005C622B373F2001D450C /* MockData */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA90053522B36A83001D450C /* ConnectTab */ = {
+			isa = PBXGroup;
+			children = (
+				FA90059C22B3720B001D450C /* Storyboards */,
+				FA90059B22B371FD001D450C /* ViewControllers */,
+				FA90059A22B371F7001D450C /* Views */,
+			);
+			path = ConnectTab;
+			sourceTree = "<group>";
+		};
+		FA90053622B36A8E001D450C /* InspirationTab */ = {
+			isa = PBXGroup;
+			children = (
+				FA90057D22B37045001D450C /* Storyboards */,
+				FA90057C22B3702E001D450C /* Layout */,
+				FA90057B22B37027001D450C /* Views */,
+				FA90057A22B37018001D450C /* ViewControllers */,
+			);
+			path = InspirationTab;
+			sourceTree = "<group>";
+		};
+		FA90053722B36AA0001D450C /* MyListTab */ = {
+			isa = PBXGroup;
+			children = (
+				FA90055B22B36E8C001D450C /* Storyboards */,
+				FA90055A22B36E7D001D450C /* ViewControllers */,
+				FA90055922B36E73001D450C /* ModelController */,
+				FA90055822B36E6D001D450C /* Views */,
+			);
+			path = MyListTab;
+			sourceTree = "<group>";
+		};
+		FA90053822B36AAC001D450C /* UserAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				FA90054E22B36DE1001D450C /* UserAuthentication.storyboard */,
+				FA90055022B36E01001D450C /* FinishUserProfileViewController.swift */,
+				FA90055222B36E18001D450C /* ForgotPasswordViewController.swift */,
+				FA90055422B36E2A001D450C /* UserCreateAccountViewController.swift */,
+				FA90055622B36E37001D450C /* UserLoginViewController.swift */,
+			);
+			path = UserAuthentication;
+			sourceTree = "<group>";
+		};
+		FA90053922B36ABA001D450C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FA90054622B36D91001D450C /* AuthManager.swift */,
+				FA90054822B36D9F001D450C /* DatabaseManager.swift */,
+				FA90054A22B36DAC001D450C /* Endpoint.swift */,
+				FA90054C22B36DBA001D450C /* StoreManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		FA90053A22B36AC3001D450C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA90054022B36D4C001D450C /* IBDesignables.swift */,
+				FA90054222B36D63001D450C /* ReuseIdentifiable.swift */,
+				FA90054422B36D7A001D450C /* UIViewController+Alert.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA90053B22B36AD2001D450C /* AppResources */ = {
+			isa = PBXGroup;
+			children = (
+				FA90051122B369C7001D450C /* AppDelegate.swift */,
+				FA90051B22B369C9001D450C /* Assets.xcassets */,
+				FA90052022B369C9001D450C /* Info.plist */,
+				FA90053E22B36C11001D450C /* whatevs.png */,
+				FA90053C22B36BED001D450C /* Mock Data Images */,
+			);
+			path = AppResources;
+			sourceTree = "<group>";
+		};
+		FA90055822B36E6D001D450C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA90057822B37008001D450C /* MyListTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA90055922B36E73001D450C /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				FA90057622B36FEE001D450C /* MyListController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		FA90055A22B36E7D001D450C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA90056422B36F1C001D450C /* MyListTableViewController.swift */,
+				FA90056622B36F30001D450C /* MyListViewController.swift */,
+				FA90056822B36F43001D450C /* UserProfileDetailViewController.swift */,
+				FA90056A22B36F60001D450C /* MyBucketNewItemViewController.swift */,
+				FA90056C22B36F71001D450C /* MyBucketViewController.swift */,
+				FA90056E22B36F9C001D450C /* MyListDetailItemViewController.swift */,
+				FA90057022B36FB3001D450C /* MyListNewItemViewController.swift */,
+				FA90057222B36FCA001D450C /* MyListPhotoPickerViewController.swift */,
+				FA90057422B36FD8001D450C /* MyListSettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA90055B22B36E8C001D450C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FA90055C22B36EC3001D450C /* MyList.storyboard */,
+				FA90055E22B36EDB001D450C /* MyListDetailItem.storyboard */,
+				FA90056022B36EED001D450C /* MyListNewItem.storyboard */,
+				FA90056222B36EFD001D450C /* MyListSettings.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA90057A22B37018001D450C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA90058E22B37158001D450C /* InspirationHomeViewController.swift */,
+				FA90059022B37179001D450C /* InspirationDetailViewController.swift */,
+				FA90059222B3718E001D450C /* InspirationOtherUserViewController.swift */,
+				FA90059422B371A4001D450C /* InspirationSearchViewController.swift */,
+				FA90059622B371BA001D450C /* InspirationAddToListViewController.swift */,
+				FA90059822B371D3001D450C /* InspirationPersonalizedAddedItemViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA90057B22B37027001D450C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA90058822B370DF001D450C /* InspirationCollectionViewCell.swift */,
+				FA90058C22B37133001D450C /* QuickAddButton.swift */,
+				FA90058A22B37102001D450C /* InspirationItemDetailPhotosCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA90057C22B3702E001D450C /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				FA90058622B370B4001D450C /* InspirationLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		FA90057D22B37045001D450C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FA90057E22B37062001D450C /* InspirationHome.storyboard */,
+				FA90058022B37078001D450C /* InspirationItemDetail.storyboard */,
+				FA90058222B37088001D450C /* InspirationSearch.storyboard */,
+				FA90058422B3709C001D450C /* InspirationOtherUser.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA90059A22B371F7001D450C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA90059D22B3723E001D450C /* MessageListTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA90059B22B371FD001D450C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA90059F22B37259001D450C /* ChatViewController.swift */,
+				FA9005A122B3726F001D450C /* MessageSearchUserViewController.swift */,
+				FA9005A322B37280001D450C /* MessageListViewController.swift */,
+				FA9005A522B3728E001D450C /* MessageComposeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA90059C22B3720B001D450C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FA9005A722B372A2001D450C /* MessageList.storyboard */,
+				FA9005A922B372BC001D450C /* MessageSearchAndCompose.storyboard */,
+				FA9005AB22B372CC001D450C /* MessageCompose.storyboard */,
+				FA9005AD22B372DA001D450C /* MessageSearchUser.storyboard */,
+				FA9005AF22B372EC001D450C /* MessageChat.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA9005B122B37328001D450C /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA9005B222B37346001D450C /* UserController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		FA9005C622B373F2001D450C /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				FA9005BE22B373B5001D450C /* MockDataMessages.swift */,
+				FA9005C022B373CC001D450C /* MockDataBucketListItems.swift */,
+				FA9005C222B373DC001D450C /* MockDataUsers.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA90050D22B369C7001D450C /* Goji */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA90052E22B369C9001D450C /* Build configuration list for PBXNativeTarget "Goji" */;
+			buildPhases = (
+				FA90050A22B369C7001D450C /* Sources */,
+				FA90050B22B369C7001D450C /* Frameworks */,
+				FA90050C22B369C7001D450C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Goji;
+			productName = Goji;
+			productReference = FA90050E22B369C7001D450C /* Goji.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA90052422B369C9001D450C /* GojiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA90053122B369C9001D450C /* Build configuration list for PBXNativeTarget "GojiTests" */;
+			buildPhases = (
+				FA90052122B369C9001D450C /* Sources */,
+				FA90052222B369C9001D450C /* Frameworks */,
+				FA90052322B369C9001D450C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA90052722B369C9001D450C /* PBXTargetDependency */,
+			);
+			name = GojiTests;
+			productName = GojiTests;
+			productReference = FA90052522B369C9001D450C /* GojiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA90050622B369C7001D450C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "DunDak, LLC";
+				TargetAttributes = {
+					FA90050D22B369C7001D450C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					FA90052422B369C9001D450C = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = FA90050D22B369C7001D450C;
+					};
+				};
+			};
+			buildConfigurationList = FA90050922B369C7001D450C /* Build configuration list for PBXProject "Goji" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA90050522B369C7001D450C;
+			productRefGroup = FA90050F22B369C7001D450C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA90050D22B369C7001D450C /* Goji */,
+				FA90052422B369C9001D450C /* GojiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA90050C22B369C7001D450C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA90051F22B369C9001D450C /* LaunchScreen.storyboard in Resources */,
+				FA9005AC22B372CC001D450C /* MessageCompose.storyboard in Resources */,
+				FA9005AA22B372BC001D450C /* MessageSearchAndCompose.storyboard in Resources */,
+				FA90051C22B369C9001D450C /* Assets.xcassets in Resources */,
+				FA90055D22B36EC3001D450C /* MyList.storyboard in Resources */,
+				FA9005AE22B372DA001D450C /* MessageSearchUser.storyboard in Resources */,
+				FA90053D22B36BED001D450C /* Mock Data Images in Resources */,
+				FA9005A822B372A2001D450C /* MessageList.storyboard in Resources */,
+				FA90056122B36EED001D450C /* MyListNewItem.storyboard in Resources */,
+				FA90053F22B36C11001D450C /* whatevs.png in Resources */,
+				FA90051722B369C7001D450C /* Main.storyboard in Resources */,
+				FA90055F22B36EDB001D450C /* MyListDetailItem.storyboard in Resources */,
+				FA9005B022B372EC001D450C /* MessageChat.storyboard in Resources */,
+				FA90057F22B37062001D450C /* InspirationHome.storyboard in Resources */,
+				FA90054F22B36DE1001D450C /* UserAuthentication.storyboard in Resources */,
+				FA90058122B37078001D450C /* InspirationItemDetail.storyboard in Resources */,
+				FA90058522B3709C001D450C /* InspirationOtherUser.storyboard in Resources */,
+				FA90056322B36EFD001D450C /* MyListSettings.storyboard in Resources */,
+				FA90058322B37088001D450C /* InspirationSearch.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA90052322B369C9001D450C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA90050A22B369C7001D450C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA90059922B371D3001D450C /* InspirationPersonalizedAddedItemViewController.swift in Sources */,
+				FA90059E22B3723E001D450C /* MessageListTableViewCell.swift in Sources */,
+				FA9005BD22B373A2001D450C /* Conversation.swift in Sources */,
+				FA9005B922B37388001D450C /* BucketListItemComment.swift in Sources */,
+				FA90055122B36E01001D450C /* FinishUserProfileViewController.swift in Sources */,
+				FA90054922B36D9F001D450C /* DatabaseManager.swift in Sources */,
+				FA90054B22B36DAC001D450C /* Endpoint.swift in Sources */,
+				FA9005BF22B373B5001D450C /* MockDataMessages.swift in Sources */,
+				FA90055522B36E2A001D450C /* UserCreateAccountViewController.swift in Sources */,
+				FA90051422B369C7001D450C /* ViewController.swift in Sources */,
+				FA90054722B36D91001D450C /* AuthManager.swift in Sources */,
+				FA90058F22B37158001D450C /* InspirationHomeViewController.swift in Sources */,
+				FA90056D22B36F71001D450C /* MyBucketViewController.swift in Sources */,
+				FA9005C322B373DC001D450C /* MockDataUsers.swift in Sources */,
+				FA90056722B36F30001D450C /* MyListViewController.swift in Sources */,
+				FA9005BB22B37394001D450C /* Message.swift in Sources */,
+				FA90058D22B37133001D450C /* QuickAddButton.swift in Sources */,
+				FA90054322B36D63001D450C /* ReuseIdentifiable.swift in Sources */,
+				FA90057522B36FD8001D450C /* MyListSettingsViewController.swift in Sources */,
+				FA90059122B37179001D450C /* InspirationDetailViewController.swift in Sources */,
+				FA9005B322B37346001D450C /* UserController.swift in Sources */,
+				FA90057322B36FCA001D450C /* MyListPhotoPickerViewController.swift in Sources */,
+				FA9005B522B3735E001D450C /* BucketList.swift in Sources */,
+				FA90058922B370DF001D450C /* InspirationCollectionViewCell.swift in Sources */,
+				FA90058B22B37102001D450C /* InspirationItemDetailPhotosCollectionViewCell.swift in Sources */,
+				FA9005C122B373CC001D450C /* MockDataBucketListItems.swift in Sources */,
+				FA90055722B36E37001D450C /* UserLoginViewController.swift in Sources */,
+				FA9005A622B3728E001D450C /* MessageComposeViewController.swift in Sources */,
+				FA9005C522B373EB001D450C /* User.swift in Sources */,
+				FA90056922B36F43001D450C /* UserProfileDetailViewController.swift in Sources */,
+				FA90051222B369C7001D450C /* AppDelegate.swift in Sources */,
+				FA90059322B3718E001D450C /* InspirationOtherUserViewController.swift in Sources */,
+				FA90054522B36D7A001D450C /* UIViewController+Alert.swift in Sources */,
+				FA9005A222B3726F001D450C /* MessageSearchUserViewController.swift in Sources */,
+				FA90057722B36FEE001D450C /* MyListController.swift in Sources */,
+				FA9005A422B37280001D450C /* MessageListViewController.swift in Sources */,
+				FA90057122B36FB3001D450C /* MyListNewItemViewController.swift in Sources */,
+				FA90055322B36E18001D450C /* ForgotPasswordViewController.swift in Sources */,
+				FA90058722B370B4001D450C /* InspirationLayout.swift in Sources */,
+				FA90057922B37008001D450C /* MyListTableViewCell.swift in Sources */,
+				FA90054D22B36DBA001D450C /* StoreManager.swift in Sources */,
+				FA90056522B36F1C001D450C /* MyListTableViewController.swift in Sources */,
+				FA90054122B36D4C001D450C /* IBDesignables.swift in Sources */,
+				FA90056B22B36F60001D450C /* MyBucketNewItemViewController.swift in Sources */,
+				FA90056F22B36F9C001D450C /* MyListDetailItemViewController.swift in Sources */,
+				FA9005A022B37259001D450C /* ChatViewController.swift in Sources */,
+				FA90059522B371A4001D450C /* InspirationSearchViewController.swift in Sources */,
+				FA90059722B371BA001D450C /* InspirationAddToListViewController.swift in Sources */,
+				FA9005B722B37370001D450C /* BucketListItem.swift in Sources */,
+				FA90051A22B369C7001D450C /* Goji.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA90052122B369C9001D450C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA90052A22B369C9001D450C /* GojiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA90052722B369C9001D450C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA90050D22B369C7001D450C /* Goji */;
+			targetProxy = FA90052622B369C9001D450C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA90051522B369C7001D450C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA90051622B369C7001D450C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA90051D22B369C9001D450C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA90051E22B369C9001D450C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA90052C22B369C9001D450C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA90052D22B369C9001D450C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA90052F22B369C9001D450C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9FXT6FZ5X;
+				INFOPLIST_FILE = "$(SRCROOT)/Goji/AppResources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dundak.Goji;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA90053022B369C9001D450C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9FXT6FZ5X;
+				INFOPLIST_FILE = "$(SRCROOT)/Goji/AppResources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dundak.Goji;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA90053222B369C9001D450C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9FXT6FZ5X;
+				INFOPLIST_FILE = GojiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dundak.GojiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Goji.app/Goji";
+			};
+			name = Debug;
+		};
+		FA90053322B369C9001D450C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9FXT6FZ5X;
+				INFOPLIST_FILE = GojiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dundak.GojiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Goji.app/Goji";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA90050922B369C7001D450C /* Build configuration list for PBXProject "Goji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA90052C22B369C9001D450C /* Debug */,
+				FA90052D22B369C9001D450C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA90052E22B369C9001D450C /* Build configuration list for PBXNativeTarget "Goji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA90052F22B369C9001D450C /* Debug */,
+				FA90053022B369C9001D450C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA90053122B369C9001D450C /* Build configuration list for PBXNativeTarget "GojiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA90053222B369C9001D450C /* Debug */,
+				FA90053322B369C9001D450C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA90051822B369C7001D450C /* Goji.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA90051922B369C7001D450C /* Goji.xcdatamodel */,
+			);
+			currentVersion = FA90051922B369C7001D450C /* Goji.xcdatamodel */;
+			path = Goji.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA90050622B369C7001D450C /* Project object */;
+}
