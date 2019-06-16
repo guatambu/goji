@@ -1,0 +1,6 @@
+framework module Pods_Goji {
+  umbrella header "Pods-Goji-umbrella.h"
+
+  export *
+  module * { export * }
+}

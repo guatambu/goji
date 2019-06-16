@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>109702620049-qcaav6g5a2p56r4l4sd89frr6b5of6m4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.109702620049-qcaav6g5a2p56r4l4sd89frr6b5of6m4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDrqn-yH4wtlQ1xmi2sUx4NEFn5X9ZCec4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>109702620049</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.dundak.Goji</string>
+	<key>PROJECT_ID</key>
+	<string>goji-dev-mtn</string>
+	<key>STORAGE_BUCKET</key>
+	<string>goji-dev-mtn.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:109702620049:ios:539a72b90749a7e5</string>
+	<key>DATABASE_URL</key>
+	<string>https://goji-dev-mtn.firebaseio.com</string>
+</dict>
+</plist>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		668B2DBB75305AD74573FD6E /* Pods_Goji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD8387816AE19288FB2E5F7 /* Pods_Goji.framework */; };
+		7527B1D3FC7799E1F3ED17C0 /* Pods_GojiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC764EDBDE325CFD0B205150 /* Pods_GojiTests.framework */; };
 		FA90051222B369C7001D450C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90051122B369C7001D450C /* AppDelegate.swift */; };
 		FA90051A22B369C7001D450C /* Goji.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA90051822B369C7001D450C /* Goji.xcdatamodeld */; };
 		FA90051C22B369C9001D450C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA90051B22B369C9001D450C /* Assets.xcassets */; };
@@ -75,6 +77,7 @@
 		FA9005C122B373CC001D450C /* MockDataBucketListItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9005C022B373CC001D450C /* MockDataBucketListItems.swift */; };
 		FA9005C322B373DC001D450C /* MockDataUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9005C222B373DC001D450C /* MockDataUsers.swift */; };
 		FA9005C522B373EB001D450C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9005C422B373EB001D450C /* User.swift */; };
+		FA9005C822B60F95001D450C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA9005C722B60F95001D450C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DD8387816AE19288FB2E5F7 /* Pods_Goji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA477ABB6F7544825A47550 /* Pods-Goji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goji.release.xcconfig"; path = "Pods/Target Support Files/Pods-Goji/Pods-Goji.release.xcconfig"; sourceTree = "<group>"; };
+		C5A5ED5EA3B9DE103A5E4034 /* Pods-Goji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Goji/Pods-Goji.debug.xcconfig"; sourceTree = "<group>"; };
+		DE089A730F9C13DD018332EB /* Pods-GojiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GojiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GojiTests/Pods-GojiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC764EDBDE325CFD0B205150 /* Pods_GojiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GojiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA90050E22B369C7001D450C /* Goji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA90051122B369C7001D450C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA90051922B369C7001D450C /* Goji.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goji.xcdatamodel; sourceTree = "<group>"; };
@@ -160,6 +168,8 @@
 		FA9005C022B373CC001D450C /* MockDataBucketListItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataBucketListItems.swift; sourceTree = "<group>"; };
 		FA9005C222B373DC001D450C /* MockDataUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataUsers.swift; sourceTree = "<group>"; };
 		FA9005C422B373EB001D450C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA9005C722B60F95001D450C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FD184E11E5A3591B6A85AC9A /* Pods-GojiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GojiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GojiTests/Pods-GojiTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				668B2DBB75305AD74573FD6E /* Pods_Goji.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,18 +185,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7527B1D3FC7799E1F3ED17C0 /* Pods_GojiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0206F08B3DF6C246A26530FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5A5ED5EA3B9DE103A5E4034 /* Pods-Goji.debug.xcconfig */,
+				9FA477ABB6F7544825A47550 /* Pods-Goji.release.xcconfig */,
+				DE089A730F9C13DD018332EB /* Pods-GojiTests.debug.xcconfig */,
+				FD184E11E5A3591B6A85AC9A /* Pods-GojiTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2694120CB2A2FF412C940837 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DD8387816AE19288FB2E5F7 /* Pods_Goji.framework */,
+				EC764EDBDE325CFD0B205150 /* Pods_GojiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA90050522B369C7001D450C = {
 			isa = PBXGroup;
 			children = (
 				FA90051022B369C7001D450C /* Goji */,
 				FA90052822B369C9001D450C /* GojiTests */,
 				FA90050F22B369C7001D450C /* Products */,
+				0206F08B3DF6C246A26530FC /* Pods */,
+				2694120CB2A2FF412C940837 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -310,6 +344,7 @@
 				FA90051122B369C7001D450C /* AppDelegate.swift */,
 				FA90051B22B369C9001D450C /* Assets.xcassets */,
 				FA90052022B369C9001D450C /* Info.plist */,
+				FA9005C722B60F95001D450C /* GoogleService-Info.plist */,
 				FA90053E22B36C11001D450C /* whatevs.png */,
 				FA90053C22B36BED001D450C /* Mock Data Images */,
 			);
@@ -457,9 +492,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA90052E22B369C9001D450C /* Build configuration list for PBXNativeTarget "Goji" */;
 			buildPhases = (
+				E8275D8C7FF694009E6FA611 /* [CP] Check Pods Manifest.lock */,
 				FA90050A22B369C7001D450C /* Sources */,
 				FA90050B22B369C7001D450C /* Frameworks */,
 				FA90050C22B369C7001D450C /* Resources */,
+				B8A5A9E14AB2FB77EEE73CB3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -474,6 +511,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA90053122B369C9001D450C /* Build configuration list for PBXNativeTarget "GojiTests" */;
 			buildPhases = (
+				4C18E5E22F7735538BA8C6EB /* [CP] Check Pods Manifest.lock */,
 				FA90052122B369C9001D450C /* Sources */,
 				FA90052222B369C9001D450C /* Frameworks */,
 				FA90052322B369C9001D450C /* Resources */,
@@ -531,6 +569,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9005C822B60F95001D450C /* GoogleService-Info.plist in Resources */,
 				FA90051F22B369C9001D450C /* LaunchScreen.storyboard in Resources */,
 				FA9005AC22B372CC001D450C /* MessageCompose.storyboard in Resources */,
 				FA9005AA22B372BC001D450C /* MessageSearchAndCompose.storyboard in Resources */,
@@ -560,6 +599,95 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C18E5E22F7735538BA8C6EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GojiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8A5A9E14AB2FB77EEE73CB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Goji/Pods-Goji-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Goji/Pods-Goji-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8275D8C7FF694009E6FA611 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Goji-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA90050A22B369C7001D450C /* Sources */ = {
@@ -766,6 +894,7 @@
 		};
 		FA90052F22B369C9001D450C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5A5ED5EA3B9DE103A5E4034 /* Pods-Goji.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -784,6 +913,7 @@
 		};
 		FA90053022B369C9001D450C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA477ABB6F7544825A47550 /* Pods-Goji.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -802,6 +932,7 @@
 		};
 		FA90053222B369C9001D450C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE089A730F9C13DD018332EB /* Pods-GojiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -823,6 +954,7 @@
 		};
 		FA90053322B369C9001D450C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD184E11E5A3591B6A85AC9A /* Pods-GojiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
